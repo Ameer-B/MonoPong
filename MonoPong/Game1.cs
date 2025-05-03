@@ -10,6 +10,7 @@ public class Game1 : Game
     private GraphicsDeviceManager graphics;
     private SpriteBatch spriteBatch;
 
+    //It's the round moving thing
     Ball ball;
     Paddle userPaddle;
     Paddle computerPaddle;
