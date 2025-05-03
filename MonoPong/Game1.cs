@@ -17,11 +17,6 @@ public class Game1 : Game
     int userPts;
     int compPts;
 
-    Vector2 userPaddleLocation = new Vector2(50, 40); //OG Location: (50,300)
-    Vector2 userPaddleSize = new Vector2(20,100);
-
-    Vector2 computerPaddleLocation = new Vector2(670,0);
-    Vector2 computerPaddleSize = new Vector2(20, 100);
     KeyboardState ks;
     SpriteFont spriteFont;
     public Game1()
@@ -43,6 +38,15 @@ public class Game1 : Game
     protected override void LoadContent()
     {
         spriteBatch = new SpriteBatch(GraphicsDevice);
+
+        Vector2 ballLocation = new Vector2(400, 250);
+        Vector2 ballSize = new Vector2(40, 40);
+
+        Vector2 userPaddleLocation = new Vector2(50, 40); //OG Location: (50,300)
+        Vector2 userPaddleSize = new Vector2(20, 100);
+
+        Vector2 computerPaddleLocation = new Vector2(670, 0);
+        Vector2 computerPaddleSize = new Vector2(20, 100);
 
         ball = new Ball(ballLocation, ballSize, Content.Load<Texture2D>("wonkyPope"), 5, 5);
         userPaddle = new Paddle(false, userPaddleLocation, userPaddleSize, Content.Load<Texture2D>("Paddle"), 7, 7);
