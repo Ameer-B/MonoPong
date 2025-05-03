@@ -16,8 +16,6 @@ public class Game1 : Game
     Paddle computerPaddle;
     int userPts;
     int compPts;
-    Vector2 ballLocation = new Vector2(400, 250);
-    Vector2 ballSize = new Vector2(40,40);
 
     Vector2 userPaddleLocation = new Vector2(50, 40); //OG Location: (50,300)
     Vector2 userPaddleSize = new Vector2(20,100);
